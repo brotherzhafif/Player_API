@@ -2,7 +2,7 @@
 > Fotball Player API Program for a Programmer Test Net Core Junior by PT Mitra Solusi Telematika
 > Using ASP.Net Core and Swagger as Website Api Testing UI
 
-### EndPoints 
+### EndPoints Structure
 - Player Controller
 
       - GetAllPlayers
@@ -23,7 +23,7 @@
 - Clone This Repository https://github.com/brotherzhafif/Player_API.git
 - Install Microsoft.EntityFrameworkCore using Nuget Package
 
-### How To Use
+### How To Test The Project
 - Using Swagger
 
       - Open The Project Using Visual Studio 2022
