@@ -5,14 +5,14 @@
 ### EndPoints Structure
 - Player Controller
 
-      - GetAllPlayers
-      - GetPlayerByBirthPlace
-      - GetPlayerById
-      - PostPlayer
+      - GET api/players
+      - GET api/players/{birthPlace}
+      - GET api/player/{id}
+      - POST api/player
 
 - Settings Controller
 
-      - GetConnection   
+      - GET api/settings   
 
 ### Required
 - Visual Studio 2022
