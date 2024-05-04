@@ -17,6 +17,7 @@
 ### Required
 - Visual Studio 2022
 - ASP.Net & Net Framework
+- Browser
 
 ### Setup
 - Clone This Repository https://github.com/brotherzhafif/Player_API.git
