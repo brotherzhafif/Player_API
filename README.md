@@ -14,7 +14,7 @@
 
       - GetConnection   
 
-### required
+### Required
 - Visual Studio 2022
 - ASP.Net & Net Framework
 
@@ -32,6 +32,7 @@
       - After Inputing The Corresponding Data Click Execute
       - You Should See The Response Drop Down in The Bottom of The Execute Button
 
-#### developer
+
+#### Developer
 BrotherZhafif
       
