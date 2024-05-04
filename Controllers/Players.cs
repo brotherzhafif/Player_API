@@ -7,7 +7,7 @@ namespace Player_API.Controllers
 {
 
     [ApiController]
-    public class PlayerController : Controller
+    public class Players : Controller
     {
         // Adding The Dummy Data For Request Testing
         private static readonly List<Player> _players = new List<Player>
@@ -22,14 +22,14 @@ namespace Player_API.Controllers
         // Endpoint Route Start (Self Explanatory Route Name Tbh)
 
         [HttpGet]
-        [Route("GetAllPlayers")]
+        [Route("api/players")]
         public IActionResult GetPlayers()
         {
             return Ok(_players);
         }
 
         [HttpGet]
-        [Route("GetPlayerByBirthPlace")]
+        [Route("api/players/{birthPlace}")]
         public IActionResult GetPlayers(string birthPlace)
         {
             IEnumerable<Player> filteredPlayers = _players;
@@ -43,7 +43,7 @@ namespace Player_API.Controllers
         }
 
         [HttpGet]
-        [Route("GetPlayerById")]
+        [Route("api/player/{id}")]
         public IActionResult GetPlayerById(int id)
         {
             var player = _players.FirstOrDefault(p => p.Id == id);

@@ -1,18 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-public class SettingsController : ControllerBase
+public class Settings : ControllerBase
 {
     // Initiation to SettingsControler configuration
     private readonly IConfiguration _configuration;
 
-    public SettingsController(IConfiguration configuration)
+    public Settings(IConfiguration configuration)
     {
         _configuration = configuration;
     }
 
     [HttpGet]
-    [Route("GetConnection")]
+    [Route("api/settings")]
     public IActionResult GetConnectionString()
     {
         var connectionString = _configuration.GetConnectionString("DefaultConnection");
