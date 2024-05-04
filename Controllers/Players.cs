@@ -57,7 +57,7 @@ namespace Player_API.Controllers
         }
 
         [HttpPost]
-        [Route("PostPlayer")]
+        [Route("api/player/")]
         public IActionResult CreatePlayer([FromBody] Player player)
         {
             if (player == null)
