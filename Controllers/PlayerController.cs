@@ -9,8 +9,7 @@ namespace Player_API.Controllers
     [ApiController]
     public class PlayerController : Controller
     {
-        // Endpoint Start
-
+        // Adding The Dummy Data For Request Testing
         private static readonly List<Player> _players = new List<Player>
         {
             new Player { Id = 1, Name = "Cristiano Ronaldo", Age = 38, BirthPlace = "Europe" },
@@ -19,6 +18,8 @@ namespace Player_API.Controllers
             new Player { Id = 4, Name = "Erling Haaland", Age = 23, BirthPlace = "Europe" },
             new Player { Id = 5, Name = "Kylian Mbappe", Age = 24, BirthPlace = "Europe" }
         };
+
+        // Endpoint Route Start (Self Explanatory Route Name Tbh)
 
         [HttpGet]
         [Route("GetAllPlayers")]
